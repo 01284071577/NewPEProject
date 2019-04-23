@@ -1,4 +1,4 @@
-<html lang="en">
+<html>
   <head>
   	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -6,6 +6,8 @@
   	<link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script src="test/my_js.js"></script>
+
   	    <title>User view</title>
 	</head>
 	
@@ -15,7 +17,7 @@
                 <nav class="navbar">
                     <div class="container">
                         <div class="navbar-brand">
-                            <a class="navbar-item" href="../">
+                            <a class="navbar-item" href="http://vgu.edu.vn">
                               VGU
                             </a>
                             <span class="navbar-burger burger" data-target="navbarMenu">
@@ -23,12 +25,13 @@
                                 <span></span>
                                 <span></span>
                             </span>
+                            
                         </div>
                         <div id="navbarMenu" class="navbar-menu">
                             <div class="navbar-end">
                                 <div class="tabs is-right">
                                     <ul>
-                                        <li class="is-active"><a>Home</a></li>
+                                        <li><a href="course.html">Home</a></li>
                                     </ul>
                                     
                                 </div>
@@ -40,6 +43,8 @@
            
         </section>
   	<div class="background-box">
+      
+
        <br>
        <section class="section">
          <div class="container">
@@ -136,8 +141,22 @@
          </div>
        </section>
 
-    </div>
 
-
+      </div>
+        <div class="center">
+        <form class="add-module" action="#" id="add-form"  method="post" >
+        <!--<img id="close" src="images/3.png" onclick ="div_hide()"-->
+          <h1 >Module Information</h1>
+          <hr>
+          <input id="m-name" name="m-ame" placeholder="Module Name" type="text">
+          <input id="m-id" name="m-id" placeholder="Module ID" type="text">
+          <input id="m-code" name="m-code" placeholder="Module code" type="text">
+          <input type="text" name="sem-id" placeholder="Semester ID">
+          <br>
+          <a href="#" id="send-module" onclick="add_hide()">Create</a>
+        </form>
+      </div>
+        
+      <button class="add-button" id="Add Module" onclick="add_show()">Add Module</button>
   </body>
 </html>
